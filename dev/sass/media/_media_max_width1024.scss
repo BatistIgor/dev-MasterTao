@@ -1,4 +1,60 @@
 @media screen and (max-width: 1024px) {
+
+    .container {
+        margin: 0 auto ;
+        max-width: 1180px;
+        padding: 0 20px;
+    }
+
+    .header {
+        margin-top: 18px;
+
+        &__logo-img {
+            height: 35.42px;
+            width: 126px;
+        }
+
+        &__navigation {
+            display: none;
+            position: fixed;
+            flex-direction: column;
+            width: 100vw;
+            top: 72px;
+            left: 0;
+            margin: 0 auto;
+            background-color: $second-bg-color;
+        }
+
+        .show {
+            display:flex;
+        }
+
+        &__list {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 46px;
+            margin-bottom: 45px;
+            gap: 29px;
+        }
+
+        &__link {
+            font-size: 24px;
+        }
+
+        &__btn {
+            font-size: 16px;
+            padding: 22px 0;
+            width: 295px;
+            margin-bottom: 60px;
+        }
+
+        .hamburger {
+            display: flex;
+            align-items: center;
+        }
+
+    }
 }
 
 

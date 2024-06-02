@@ -1,0 +1,51 @@
+.header {
+    margin-top: 26px;
+    margin-bottom: 39px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo-img {
+        width: 172px;
+        height: 48.35px;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        flex-basis: 602px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 146%;
+        transition: 0.4s;
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    &__btn {
+        font-size: 15px;
+        width: 171px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+
+}
+
+
+
