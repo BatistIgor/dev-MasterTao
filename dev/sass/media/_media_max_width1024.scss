@@ -53,8 +53,48 @@
             display: flex;
             align-items: center;
         }
+    }
+
+    .first-screen {
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__background {
+            background-clip: linear-gradient(0deg, rgba(4, 9, 17, 0.6), rgba(4, 9, 17, 0.6));
+        }
+
+        &__title {
+            display: flex;
+            font-size: 32px;
+            line-height: 126%;
+            max-width: 255px;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__subtitle {
+            font-weight: 300;
+            font-size: 16px;
+            max-width: 255px;
+            line-height: 135.5%;
+            text-align: center;
+        }
+
 
     }
 }
+
+
 
 

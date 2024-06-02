@@ -1,0 +1,56 @@
+.first-screen {
+    margin-bottom: 68px;
+
+    .container {
+        max-width: 1140px;
+    }
+
+    &__background {
+        background-repeat: no-repeat;
+        max-width: 1820px;
+        height: 700px;
+        border-radius: 24px;
+        margin: 0 auto;
+        background-position: center;
+    }
+
+
+    &__content {
+        padding-top: 163px;
+    }
+
+    &__title {
+        max-width: 463px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+    
+    &__subtitle {
+        max-width: 345px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 135.5%;
+        margin-bottom: 37px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 49px;
+        padding: 22px 33px;
+    }
+}
+
+.swiper-button-next:after { 
+    color: #fff;
+    position: absolute;
+    left: -200px;
+}
+
+
+.swiper-button-prev:after {
+    color: #fff;
+    position: absolute;
+    left: 200px;
+}
+
