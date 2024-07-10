@@ -1,3 +1,8 @@
 @media (min-width: 1025px) {
-
+    .first-screen{
+        &__background {
+            border-radius: 45px;
+        }
+    }
 }
+

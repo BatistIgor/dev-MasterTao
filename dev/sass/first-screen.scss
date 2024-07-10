@@ -1,17 +1,19 @@
 .first-screen {
-    margin-bottom: 68px;
-
+    margin-bottom: 97px;
+    
     .container {
         max-width: 1140px;
     }
 
     &__background {
+        box-sizing: border-box;
         background-repeat: no-repeat;
         max-width: 1820px;
         height: 700px;
-        border-radius: 24px;
         margin: 0 auto;
         background-position: center;
+        background-size: cover;
+        padding: 0 100px;
     }
 
 
@@ -36,21 +38,30 @@
     &__btn {
         display: flex;
         align-items: center;
-        gap: 49px;
-        padding: 22px 33px;
+        gap: 40px;
+        padding: 22px 25px;
     }
 }
 
 .swiper-button-next:after { 
     color: #fff;
     position: absolute;
-    left: -200px;
+    left: -4vw;
 }
 
 
 .swiper-button-prev:after {
     color: #fff;
     position: absolute;
-    left: 200px;
+    left: 4vw;
 }
 
+.swiper-pagination-bullet {
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+    background: var(--swiper-pagination-bullet-inactive-color, transparent);
+    background-image: url(../assets/img/pugin.svg);
+}
+
+.swiper-pagination-bullet-active  {
+    background: var(--swiper-pagination-bullet-inactive-color, #fff);
+}

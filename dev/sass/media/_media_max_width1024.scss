@@ -8,6 +8,7 @@
 
     .header {
         margin-top: 18px;
+        margin-bottom: 15px;
 
         &__logo-img {
             height: 35.42px;
@@ -15,6 +16,8 @@
         }
 
         &__navigation {
+            z-index: 100;
+            height: 100vh;
             display: none;
             position: fixed;
             flex-direction: column;
@@ -68,10 +71,24 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            z-index: 1;
         }
 
         &__background {
             background-clip: linear-gradient(0deg, rgba(4, 9, 17, 0.6), rgba(4, 9, 17, 0.6));
+            padding: 0 0;
+            height: calc(100vh - 71.4px);
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #00000099;
+            }
         }
 
         &__title {
@@ -92,6 +109,69 @@
         }
 
 
+    }
+
+    .calculation {
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__title {
+            margin-bottom: 79px;
+            font-size: 24px;
+            max-width: 335px;
+            text-align: center;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -25px;
+                left: calc(50% - 45.5px);
+                display: flex;
+            }
+        }
+
+        &__form {
+            max-width: 335px;
+            padding: 50px 30px 34px;
+        }
+
+        &__row {
+            flex-direction: column;
+        }
+    }
+
+    .advantages {
+
+        &__background {
+            height: 479px;
+            border-radius: 0px;
+        }
+
+        &__row {
+            display: none;
+        }
+
+        &__inner {
+            padding-top: 55px;
+        }
+
+        &__title {
+            margin-bottom: 64px;
+            font-size: 24px;
+        }
+
+        .advantages-swiper {
+            display: flex;
+        }
     }
 }
 

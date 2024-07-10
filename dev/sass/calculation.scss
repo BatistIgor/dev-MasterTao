@@ -1,0 +1,178 @@
+.calculation {
+
+    margin-bottom: 109px;
+
+    .container {
+        max-width: 1185px;
+        position: relative;
+    }
+
+    &__title {
+        max-width: 626px;
+        margin-bottom: 59px;
+        text-transform: uppercase;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 85px;
+            height: 2px;
+            background-color: $green;
+            margin: 9px;
+        }
+    }
+
+    &__form {
+        max-width: 626px;
+        background-color: $second-bg-color;
+        border-radius: 20px;
+        filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32));
+        padding: 50px 50px 60px;
+    }
+
+    &__row {
+        display: flex;
+        gap: 30px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__row:last-child {
+        margin-bottom: 0;
+    }
+
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    &__column--bottom {
+        justify-content: end;
+        gap: 14px;
+        
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__box--row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__input {
+        height: 56px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 8px;
+        padding: 0 20px;
+        font-family: $font-primary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 126%;
+
+
+        &:focus {
+            outline: none;
+            border: 2px solid $orange; 
+            box-shadow: 0 0 5px $orange; 
+        }
+
+        &::placeholder {
+            color: #CBCBCB;
+        }
+    }
+
+    &__lable--mr {
+        margin-left: -24px;
+        padding-left: 33px;
+        z-index: 1000;
+    }
+
+    &__checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+    }
+
+    &__checkbox-style {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #282B38;
+        border-radius: 4px;
+        background-color: #fff;
+        position: relative;
+    }
+
+    &__checkbox:checked + &__checkbox-style {
+
+        &::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            background: url(../assets/img/checkbox-checked.svg);
+            top: calc(50% - 6px);
+            left: calc(50% - 6px);
+        }
+    }
+
+    &__checkbox:focus + &__checkbox-style {
+        border: 2px solid $orange; 
+        box-shadow: 0 0 5px $orange; 
+    }
+
+    &__file-name{
+        margin-top: 14px;
+        margin-bottom: 12px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 126%;
+    }
+
+    &__file {
+        display: none;
+    }
+
+    
+    &__file-text {
+        border: 1px dashed rgba(255, 255, 255, 0.26);
+        border-radius: 10px;
+        padding: 15px 14px;
+        text-align: center;
+        transition: 0.4s;
+        cursor: pointer;
+
+        &:hover {
+            border-color: $green;
+            color: $green;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 22px 25px;
+        max-width: 253px;
+        margin-top: 8px;
+    }
+
+    &__img {
+        max-width: 560px;
+        max-height: 888px;
+        position: absolute;
+        top: -29px;
+        right: 0;
+    }
+    
+}
+
+

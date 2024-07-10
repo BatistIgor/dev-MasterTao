@@ -38,3 +38,17 @@ var swiper = new Swiper(".mySwiper", {
       },
   });
 
+var swiper = new Swiper(".advantages-swiper", {
+pagination: {
+    el: ".swiper-pagination",
+    },
+});
+
+
+const fileInput = document.querySelector('#calculation__file');
+const fileName = document.querySelector('#calculation__file-name')
+
+fileInput.addEventListener('change', () => {
+    fileName.innerHTML = fileInput.files[0].name;
+});
+
