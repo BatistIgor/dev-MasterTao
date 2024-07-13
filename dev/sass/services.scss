@@ -1,0 +1,117 @@
+.services {
+    margin-bottom: 98px;
+    position: relative;
+
+    &__background {
+        padding-top: 90px;
+        margin: 0 auto;
+        max-width: 1820px;
+        height: 794px;
+        background-color: $second-bg-color;
+        border-radius: 20px;
+    }
+
+    &__title {
+        text-align: center;
+        position: relative;
+        margin-bottom: 75px;
+
+        &::after {
+            content: "";
+            bottom: -19px;
+            left: calc(50% - 42.5px);
+            position: absolute;
+            width: 85px;
+            height: 2px;
+            background-color: $orange;
+        }
+    }
+
+    &__slide {
+        padding: 0 30px 33px;
+        width: 360px;
+        height: 482px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        box-sizing: border-box;
+        
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 124.5%;
+        margin-bottom: 13px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 124.5%;
+        margin-bottom: 14px;
+    }
+
+    &__btn {
+        max-width: 153px;
+        background-color: transparent;
+        height: 50px;
+    }
+
+
+}
+
+
+.services-pagination{
+    display: none;
+}
+
+.services-swiper {
+    max-width: 1140px;
+    padding-bottom: 60px;
+
+    &-button-next {
+        position: absolute;
+        top: 422px;
+        right: calc(50vw - 660px);
+        background-image: url(../assets/img/arrow-next.svg);
+        background-repeat: no-repeat;
+        width: 23px;
+        height: 42px;
+        z-index: 1000;
+        display: none;
+        cursor: pointer;
+        transition: filter 0.3s ease;
+
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(60%) sepia(15%) saturate(740%) hue-rotate(38deg) brightness(95%);
+        }
+
+    }
+
+    &-button-prev {
+        position: absolute;
+        top: 422px;
+        left: calc(50vw - 660px);
+        background-image: url(../assets/img/arrow-prev.svg);
+        background-repeat: no-repeat;
+        width: 23px;
+        height: 42px;
+        z-index: 1000;
+        display: none;
+        cursor: pointer;
+        transition: filter 0.3s ease;
+
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(60%) sepia(15%) saturate(740%) hue-rotate(38deg) brightness(95%);
+        }
+    }
+}
+
+@media (min-width: 1330px) {
+    .services-swiper-button-next, .services-swiper-button-prev {
+        display: block;
+    }
+}

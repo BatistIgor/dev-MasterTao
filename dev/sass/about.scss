@@ -1,0 +1,42 @@
+.about {
+    margin-bottom: 50px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 555px;
+    }
+
+    &__title {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        position: relative;
+
+        &::after {
+            content: "";
+            bottom: -19px;
+            left: 0;
+            position: absolute;
+            width: 85px;
+            height: 2px;
+            background-color: $green;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 170%;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        max-width: 550px;
+        max-height: 581px;
+    }
+
+
+}
+

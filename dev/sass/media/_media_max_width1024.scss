@@ -1,5 +1,10 @@
 @media screen and (max-width: 1024px) {
 
+    h2 {
+        font-size: 24px;
+    }
+
+
     .container {
         margin: 0 auto ;
         max-width: 1180px;
@@ -59,6 +64,7 @@
     }
 
     .first-screen {
+        margin-bottom: 55px;
 
         &__container {
             display: flex;
@@ -112,6 +118,7 @@
     }
 
     .calculation {
+        margin-bottom: 60px;
 
         .container {
             display: flex;
@@ -150,6 +157,7 @@
     }
 
     .advantages {
+        margin-bottom: 54px;
 
         &__background {
             height: 479px;
@@ -173,8 +181,97 @@
             display: flex;
         }
     }
+
+    .services {
+        margin-bottom: 54px;
+
+        &__background { 
+            padding-top: 50px;
+            height: 726px;
+            border-radius: 0;
+        }
+
+        &__title {
+            margin-bottom: 60px;
+        }
+    }
+
+    .about {
+        margin-bottom: 34px;
+
+        &__inner {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 49px;
+
+            &::after {
+                content: "";
+                left: calc(50% - 42.5px);
+            }
+        }
+
+        &__text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 149.5%;
+            text-align: justify;
+        }
+
+        &__img {
+            max-width: 300px;
+        }
+    }
+
+    .question {
+        margin-bottom: 60px;
+        padding: 38px 0;
+
+        &__title {
+            margin-bottom: 46px;
+        }
+
+        &__inner {
+            gap: 28px;
+            flex-direction: column;
+        }
+
+        &__acordeon {
+            flex-basis: auto;
+        }
+
+        &__form { 
+            max-height: none;
+            max-width: 335px;
+            padding: 38px 20px;
+            margin: 0 auto;
+        }
+
+    }
+
+
+    .footer {
+
+        .container {
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__social {
+            justify-content: center;
+        }
+
+        &__section {
+            display: none;
+        }
+
+        
+    }
+
 }
-
-
 
 

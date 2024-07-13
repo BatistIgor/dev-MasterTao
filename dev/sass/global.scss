@@ -71,3 +71,23 @@ h3 {
         background-color: $green;
     }
 }
+
+.logo-img {
+    width: 172px;
+    height: 48.35px;
+    cursor: pointer;
+}
+
+.btn-pas {
+    border: 1px solid $orange;
+    background-color: $second-bg-color;
+    border-radius: 45px;
+    transition: 0.4s;
+    cursor: pointer;
+    
+
+    &:hover {
+        border-color: transparent;
+        background-color: $green;
+    }
+}
