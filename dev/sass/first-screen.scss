@@ -1,5 +1,7 @@
 .first-screen {
     margin-bottom: 97px;
+    margin-top: 116.34px;
+    height: calc(100vh - 116.34px);
     
     .container {
         max-width: 1140px;
@@ -43,6 +45,9 @@
     }
 }
 
+.swiper {
+}
+
 .swiper-button-next:after { 
     color: #fff;
     position: absolute;
@@ -59,7 +64,7 @@
 .swiper-pagination-bullet {
     opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
     background: var(--swiper-pagination-bullet-inactive-color, transparent);
-    background-image: url(../assets/img/pugin.svg);
+    background-image: url(assets/img/pugin.svg);
 }
 
 .swiper-pagination-bullet-active  {

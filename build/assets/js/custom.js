@@ -1,31 +1,22 @@
-function moveButton() {
-    const btn = document.querySelector('.header__btn');
-    const list = document.querySelector('.header__navigation');
-    const nav = document.querySelector('.header__inner');
-
-    if (window.innerWidth < 1024) {
-        list.appendChild(btn);
-    } else {
-        nav.appendChild(btn);
-    }
-}
-
-// Перемещение кнопки при загрузке страницы
-moveButton();
-
-// Перемещение кнопки при изменении размера окна
-window.addEventListener('resize', moveButton);
-
-
 const burger = document.querySelector('.hamburger');
 const navigation = document.querySelector('.header__navigation');
+const links = document.querySelectorAll(".header__link");
 
 function hamburger() {
     burger.classList.toggle("is-active");
+    document.body.classList.toggle('no-scrolled');
     navigation.classList.toggle("show");
 }
 
 burger.addEventListener('click', hamburger)
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    burger.classList.remove("is-active");
+    document.body.classList.remove('no-scrolled');
+    navigation.classList.remove("show");
+  });
+});
 
 
 var swiper = new Swiper(".mySwiper", {

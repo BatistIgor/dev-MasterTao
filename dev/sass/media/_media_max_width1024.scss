@@ -12,8 +12,12 @@
     }
 
     .header {
-        margin-top: 18px;
-        margin-bottom: 15px;
+        padding-top: 18px;
+        padding-bottom: 15px;
+
+        &__logo {
+            z-index: 1000;
+        }
 
         &__logo-img {
             height: 35.42px;
@@ -24,17 +28,20 @@
             z-index: 100;
             height: 100vh;
             display: none;
-            position: fixed;
             flex-direction: column;
-            width: 100vw;
-            top: 72px;
-            left: 0;
             margin: 0 auto;
             background-color: $second-bg-color;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
         }
 
         .show {
             display:flex;
+            position: fixed;
         }
 
         &__list {
@@ -55,16 +62,27 @@
             padding: 22px 0;
             width: 295px;
             margin-bottom: 60px;
+
+            &--mobile {
+                display: block;
+            }
+
+            &--desktop {
+                display: none;
+            }
         }
 
         .hamburger {
             display: flex;
             align-items: center;
+            z-index: 1000;
         }
     }
 
     .first-screen {
         margin-bottom: 55px;
+        margin-top: 84.34px;
+        height: calc(100vh - 84.34px);
 
         &__container {
             display: flex;
@@ -112,6 +130,10 @@
             max-width: 255px;
             line-height: 135.5%;
             text-align: center;
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+            bottom: 20px !important;
         }
 
 

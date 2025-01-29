@@ -1,6 +1,11 @@
 .header {
-    margin-top: 26px;
-    margin-bottom: 39px;
+    padding-top: 26px;
+    padding-bottom: 39px;
+    width: 100%;
+    position: absolute;
+    background-color: $first-bg-color;
+    z-index: 1000;
+    top: 0;
 
     &__inner {
         display: flex;
@@ -33,6 +38,10 @@
     &__btn {
         font-size: 15px;
         width: 171px;
+
+        &--mobile {
+            display: none;
+        }
     }
 
     .hamburger {
